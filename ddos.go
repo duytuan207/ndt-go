@@ -256,11 +256,11 @@ func main() {
 	for i := 0; i < threads; i++ {
 		time.Sleep(time.Microsecond * 100)
 		go flood() // Start threads
-		fmt.Printf("\rThreads [%.0f] are ready", float64(i+1))
+		fmt.Printf("\rThreads [%.0f] đã được chuẩn bị", float64(i+1))
 		os.Stdout.Sync()
 		//time.Sleep( time.Millisecond * 1)
 	}
-	fmt.Println("Flood will end in " + os.Args[4] + " seconds.")
+	fmt.Println("Flood sẽ kết thúc trong " + os.Args[4] + " giây.")
 	close(start)
 	time.Sleep(time.Duration(limit) * time.Second)
 	//Keep the threads continue
